@@ -190,7 +190,7 @@
         <!-- End -->
 
         <!-- Cta Start -->
-        <section class="section" style="background: url('../assets/images/cta.jpg') center center;">
+        <section class="section" style="background: url('assets/images/cta.jpg') center center;">
             <div class="bg-overlay bg-overlay-dark" style="opacity: 0.3;"></div>
             <div class="container">
                 <div class="row">

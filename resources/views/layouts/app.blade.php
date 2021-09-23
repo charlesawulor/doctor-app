@@ -13,15 +13,18 @@
         <meta name="website" content="https://shreethemes.in/" />
         <meta name="Version" content="v1.2.0" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="https://shreethemes.in/doctris/layouts/assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{{asset('assets/https://shreethemes.in/doctris/layouts/assets/images/favicon.ico')}}">
         <!-- Bootstrap -->
         <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- Icons -->
         <link href="{{asset('assets/css/materialdesignicons.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('assets/css/remixicon.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{asset('assets/unicons.iconscout.com/release/v3.0.6/css/line.css')}}"  rel="stylesheet">
+        <link href="{{asset('assets/v3.0.6/css/line.css')}}"  rel="stylesheet">
         <!-- Css -->
         <link href="{{asset('assets/css/style.min.css')}}" rel="stylesheet" type="text/css" id="theme-opt" />
+
+
+       
     </head>
     <body>
         <!-- Navbar STart -->
