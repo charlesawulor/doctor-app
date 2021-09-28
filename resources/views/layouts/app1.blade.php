@@ -94,12 +94,12 @@
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu nav-left">
                         <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
+                            <a href="javascript:void(0)">Home</a><span class=""></span>
+                           <!-- <ul class="submenu">
                                 <li><a href="index.html" class="sub-menu-item">Index One</a></li>
                                 <li><a href="index-two.html" class="sub-menu-item">Index Two</a></li>
                                 <li><a href="index-three.html" class="sub-menu-item">Index Three</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
 
                         <li class="has-submenu parent-parent-menu-item">
