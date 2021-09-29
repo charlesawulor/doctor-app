@@ -23,7 +23,7 @@
                     <div class="col-md-6">
                         <div class="heading-title">
                             <h4 class="heading mb-3">Book The Best Doctor Today</h4>
-                            <p class="para-desc text-muted mb-0">Great doctor if you need your family member to get immediate assistance, emergency treatment or a simple consultation.</p>
+                            <p class="para-desc text-muted mb-0">Great doctor if you or your family member need to get immediate assistance, emergency treatment or a simple consultation.</p>
                         </div>
                         <div class="subcribe-form mt-4">
                             <form class="ms-0" style="max-width: 550px;">
