@@ -22,7 +22,7 @@
                 <div class="row mt-5 mt-sm-0 align-items-center">
                     <div class="col-md-6">
                         <div class="heading-title">
-                            <h4 class="heading mb-3">Book The Best Doctor</h4>
+                            <h4 class="heading mb-3">Book The Best Doctor Today</h4>
                             <p class="para-desc text-muted mb-0">Great doctor if you need your family member to get immediate assistance, emergency treatment or a simple consultation.</p>
                         </div>
                         <div class="subcribe-form mt-4">
