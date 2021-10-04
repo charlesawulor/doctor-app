@@ -9,10 +9,10 @@
                     <div class="header-bar d-flex justify-content-between border-bottom">
                         <div class="d-flex align-items-center">
                             <a href="#" class="logo-icon">
-                                <img src="../assets/images/logo-icon.png" height="30" class="small" alt="">
+                                <img src="{{asset('assets2/images/logo-icon.jpg')}}" height="30" class="small" alt="">
                                 <span class="big">
-                                    <img src="../assets/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
-                                    <img src="../assets/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+                                    <img src="{{asset('assets2/images/logo-dark.jpg')}}" height="24" class="logo-light-mode" alt="">
+                                    <img src="{{asset('assets2/images/logo-light.jpg')}}" height="24" class="logo-dark-mode" alt="">
                                 </span>
                             </a>
                             <a id="close-sidebar" class="btn btn-icon btn-pills btn-soft-primary ms-2" href="#">
@@ -33,38 +33,38 @@
                         <ul class="list-unstyled mb-0">
                             <li class="list-inline-item mb-0">
                                 <div class="dropdown dropdown-primary">
-                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/language/american.png" class="avatar avatar-ex-small rounded-circle p-2" alt=""></button>
+                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('assets2/images/language/american.jpg')}}" class="avatar avatar-ex-small rounded-circle p-2" alt=""></button>
                                     <div class="dropdown-menu dd-menu drop-ups dropdown-menu-end bg-white shadow border-0 mt-3 p-2" data-simplebar style="height: 175px;">
                                         <a href="javascript:void(0)" class="d-flex align-items-center">
-                                            <img src="../assets/images/language/chinese.png" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="{{asset('assets2/images/language/chinese.jpg')}}" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Chinese</small>
                                             </div>
                                         </a>
         
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="../assets/images/language/european.png" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="{{asset('assets2/images/language/european.jpg')}}" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">European</small>
                                             </div>
                                         </a>
         
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="../assets/images/language/indian.png" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="{{asset('assets2/images/language/indian.jpg')}}" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Indian</small>
                                             </div>
                                         </a>
         
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="../assets/images/language/japanese.png" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="{{asset('assets2/images/language/japanese.jpg')}}" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Japanese</small>
                                             </div>
                                         </a>
         
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="../assets/images/language/russian.png" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="{{asset('assets2/images/language/russian.jpg')}}" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Russian</small>
                                             </div>
@@ -87,7 +87,7 @@
                                     <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 px-2 py-2" data-simplebar style="height: 320px; width: 300px;">
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="../assets/images/client/02.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="{{asset('assets2/images/client/02.jpg')}}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Janalia</b> <small class="text-muted fw-normal d-inline-block">1 hour ago</small></small>
                                             </div>
                                         </a>
@@ -101,7 +101,7 @@
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="../assets/images/client/03.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="{{asset('assets2/images/client/03.jpg')}}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Cristina</b> <small class="text-muted fw-normal d-inline-block">5 hour ago</small></small>
                                             </div>
                                         </a>
@@ -115,14 +115,14 @@
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="../assets/images/client/06.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="{{asset('assets2/images/client/06.jpg')}}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Donald Aghori</b> <small class="text-muted fw-normal d-inline-block">1 day ago</small></small>
                                             </div>
                                         </a>
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="../assets/images/client/07.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="{{asset('assets2/images/client/07.jpg')}}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Calvin</b> <small class="text-muted fw-normal d-inline-block">2 day ago</small></small>
                                             </div>
                                         </a>
@@ -132,10 +132,10 @@
 
                             <li class="list-inline-item mb-0 ms-1">
                                 <div class="dropdown dropdown-primary">
-                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/doctors/01.jpg" class="avatar avatar-ex-small rounded-circle" alt=""></button>
+                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('assets2/images/doctors/01.jpg')}}" class="avatar avatar-ex-small rounded-circle" alt=""></button>
                                     <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3" style="min-width: 200px;">
                                         <a class="dropdown-item d-flex align-items-center text-dark" href="profile.html">
-                                            <img src="../assets/images/doctors/01.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                            <img src="{{asset('assets2/images/doctors/01.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                             <div class="flex-1 ms-2">
                                                 <span class="d-block mb-1">Calvin Carlo</span>
                                                 <small class="text-muted">Orthopedic</small>
@@ -290,7 +290,7 @@
                                         <li>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="d-inline-flex">
-                                                    <img src="../assets/images/client/01.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                    <img src="{{asset('assets2/images/client/01.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                     <div class="ms-3">
                                                         <h6 class="text-dark mb-0 d-block">Calvin Carlo</h6>
                                                         <small class="text-muted">Booking on 27th Nov, 2020</small>
@@ -306,7 +306,7 @@
                                         <li class="mt-4">
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="d-inline-flex">
-                                                    <img src="../assets/images/client/02.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                    <img src="{{asset('assets2/images/client/02.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                     <div class="ms-3">
                                                         <h6 class="text-dark mb-0 d-block">Joya Khan</h6>
                                                         <small class="text-muted">Booking on 27th Nov, 2020</small>
@@ -322,7 +322,7 @@
                                         <li class="mt-4">
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="d-inline-flex">
-                                                    <img src="../assets/images/client/03.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                    <img src="{{asset('assets2/images/client/03.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                     <div class="ms-3">
                                                         <h6 class="text-dark mb-0 d-block">Amelia Muli</h6>
                                                         <small class="text-muted">Booking on 27th Nov, 2020</small>
@@ -338,7 +338,7 @@
                                         <li class="mt-4">
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="d-inline-flex">
-                                                    <img src="../assets/images/client/04.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                    <img src="{{asset('assets2/images/client/04.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                     <div class="ms-3">
                                                         <h6 class="text-dark mb-0 d-block">Nik Ronaldo</h6>
                                                         <small class="text-muted">Booking on 27th Nov, 2020</small>
@@ -354,7 +354,7 @@
                                         <li class="mt-4">
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="d-inline-flex">
-                                                    <img src="../assets/images/client/05.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                    <img src="{{asset('assets2/images/client/05.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                     <div class="ms-3">
                                                         <h6 class="text-dark mb-0 d-block">Crista Joseph</h6>
                                                         <small class="text-muted">Booking on 27th Nov, 2020</small>
@@ -374,7 +374,7 @@
                                 <div class="card chat chat-person border-0 shadow rounded">
                                     <div class="d-flex justify-content-between border-bottom p-4">
                                         <div class="d-flex">
-                                            <img src="../assets/images/doctors/02.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                            <img src="{{asset('assets2/images/doctors/02.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                             <div class="flex-1 overflow-hidden ms-3">
                                                 <a href="#" class="text-dark mb-0 h6 d-block text-truncate">Cristino Murphy</a>
                                                 <small class="text-muted"><i class="mdi mdi-checkbox-blank-circle text-success on-off align-text-bottom"></i> Online</small>
@@ -398,7 +398,7 @@
                                             <div class="d-inline-block">
                                                 <div class="d-flex chat-type mb-3">
                                                     <div class="position-relative">
-                                                        <img src="../assets/images/doctors/02.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                        <img src="{{asset('assets2/images/doctors/02.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                         <i class="mdi mdi-checkbox-blank-circle text-success on-off align-text-bottom"></i>
                                                     </div>
                                                         
@@ -414,7 +414,7 @@
                                             <div class="d-inline-block">
                                                 <div class="d-flex chat-type mb-3">
                                                     <div class="position-relative chat-user-image">
-                                                        <img src="../assets/images/client/09.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                        <img src="{{asset('assets2/images/client/09.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                         <i class="mdi mdi-checkbox-blank-circle text-success on-off align-text-bottom"></i>
                                                     </div>
                                                         
@@ -430,7 +430,7 @@
                                             <div class="d-inline-block">
                                                 <div class="d-flex chat-type mb-3">
                                                     <div class="position-relative chat-user-image">
-                                                        <img src="../assets/images/client/09.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                        <img src="{{asset('assets2/images/client/09.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                         <i class="mdi mdi-checkbox-blank-circle text-success on-off align-text-bottom"></i>
                                                     </div>
                                                         
@@ -446,7 +446,7 @@
                                             <div class="d-inline-block">
                                                 <div class="d-flex chat-type mb-3">
                                                     <div class="position-relative">
-                                                        <img src="../assets/images/doctors/02.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                        <img src="{{asset('assets2/images/doctors/02.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                         <i class="mdi mdi-checkbox-blank-circle text-success on-off align-text-bottom"></i>
                                                     </div>
                                                         
@@ -462,7 +462,7 @@
                                             <div class="d-inline-block">
                                                 <div class="d-flex chat-type mb-3">
                                                     <div class="position-relative">
-                                                        <img src="../assets/images/doctors/02.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                        <img src="{{asset('assets2/images/doctors/02.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                         <i class="mdi mdi-checkbox-blank-circle text-success on-off align-text-bottom"></i>
                                                     </div>
                                                         
@@ -478,7 +478,7 @@
                                             <div class="d-inline-block">
                                                 <div class="d-flex chat-type mb-3">
                                                     <div class="position-relative chat-user-image">
-                                                        <img src="../assets/images/client/09.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                        <img src="{{asset('assets2/images/client/09.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                         <i class="mdi mdi-checkbox-blank-circle text-success on-off align-text-bottom"></i>
                                                     </div>
                                                         
@@ -494,7 +494,7 @@
                                             <div class="d-inline-block">
                                                 <div class="d-flex chat-type mb-3">
                                                     <div class="position-relative">
-                                                        <img src="../assets/images/doctors/02.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                        <img src="{{asset('assets2/images/doctors/02.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                         <i class="mdi mdi-checkbox-blank-circle text-success on-off align-text-bottom"></i>
                                                     </div>
                                                         
@@ -510,7 +510,7 @@
                                             <div class="d-inline-block">
                                                 <div class="d-flex chat-type mb-3">
                                                     <div class="position-relative chat-user-image">
-                                                        <img src="../assets/images/client/09.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                        <img src="{{asset('assets2/images/client/09.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                         <i class="mdi mdi-checkbox-blank-circle text-success on-off align-text-bottom"></i>
                                                     </div>
                                                         
@@ -526,7 +526,7 @@
                                             <div class="d-inline-block">
                                                 <div class="d-flex chat-type mb-3">
                                                     <div class="position-relative">
-                                                        <img src="../assets/images/doctors/02.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                        <img src="{{asset('assets2/images/doctors/02.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                         <i class="mdi mdi-checkbox-blank-circle text-success on-off align-text-bottom"></i>
                                                     </div>
                                                         
@@ -542,7 +542,7 @@
                                             <div class="d-inline-block">
                                                 <div class="d-flex chat-type mb-3">
                                                     <div class="position-relative chat-user-image">
-                                                        <img src="../assets/images/client/09.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                        <img src="{{asset('assets2/images/client/09.jpg')}}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                                         <i class="mdi mdi-checkbox-blank-circle text-success on-off align-text-bottom"></i>
                                                     </div>
                                                         
@@ -588,7 +588,7 @@
                                     <ul class="list-unstyled mb-0 p-4" data-simplebar style="height: 355px;">
                                         <li class="d-flex align-items-center justify-content-between">
                                             <div class="d-flex align-items-center">
-                                                <img src="../assets/images/doctors/01.jpg" class="avatar avatar-small rounded-circle border shadow" alt="">
+                                                <img src="{{asset('assets2/images/doctors/01.jpg')}}" class="avatar avatar-small rounded-circle border shadow" alt="">
                                                 <div class="flex-1 ms-3">
                                                     <span class="d-block h6 mb-0">Dr. Calvin Carlo</span>
                                                     <small class="text-muted">Orthopedic</small>
@@ -609,7 +609,7 @@
 
                                         <li class="d-flex align-items-center justify-content-between mt-4">
                                             <div class="d-flex align-items-center">
-                                                <img src="../assets/images/doctors/02.jpg" class="avatar avatar-small rounded-circle border shadow" alt="">
+                                                <img src="{{asset('assets2/images/doctors/02.jpg')}}" class="avatar avatar-small rounded-circle border shadow" alt="">
                                                 <div class="flex-1 ms-3">
                                                     <span class="d-block h6 mb-0">Dr. Cristino Murphy</span>
                                                     <small class="text-muted">Gynecology</small>
@@ -630,7 +630,7 @@
 
                                         <li class="d-flex align-items-center justify-content-between mt-4">
                                             <div class="d-flex align-items-center">
-                                                <img src="../assets/images/doctors/03.jpg" class="avatar avatar-small rounded-circle border shadow" alt="">
+                                                <img src="{{asset('assets2/images/doctors/03.jpg')}}" class="avatar avatar-small rounded-circle border shadow" alt="">
                                                 <div class="flex-1 ms-3">
                                                     <span class="d-block h6 mb-0">Dr. Alia Reddy</span>
                                                     <small class="text-muted">Psychotherapy</small>
@@ -651,7 +651,7 @@
 
                                         <li class="d-flex align-items-center justify-content-between mt-4">
                                             <div class="d-flex align-items-center">
-                                                <img src="../assets/images/doctors/04.jpg" class="avatar avatar-small rounded-circle border shadow" alt="">
+                                                <img src="{{asset('assets2/images/doctors/04.jpg')}}" class="avatar avatar-small rounded-circle border shadow" alt="">
                                                 <div class="flex-1 ms-3">
                                                     <span class="d-block h6 mb-0">Dr. Toni Kover</span>
                                                     <small class="text-muted">Dentist</small>
@@ -672,7 +672,7 @@
 
                                         <li class="d-flex align-items-center justify-content-between mt-4">
                                             <div class="d-flex align-items-center">
-                                                <img src="../assets/images/doctors/05.jpg" class="avatar avatar-small rounded-circle border shadow" alt="">
+                                                <img src="{{asset('assets2/images/doctors/05.jpg')}}" class="avatar avatar-small rounded-circle border shadow" alt="">
                                                 <div class="flex-1 ms-3">
                                                     <span class="d-block h6 mb-0">Dr. Jennifer Ballance</span>
                                                     <small class="text-muted">Cardiology</small>
