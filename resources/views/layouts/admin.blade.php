@@ -47,6 +47,10 @@
         </div>
         <!-- Loader -->
 
+
+
+
+
         <div class="page-wrapper doctris-theme toggled">
             <nav id="sidebar" class="sidebar-wrapper">
                 <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
