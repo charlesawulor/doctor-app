@@ -1,9 +1,7 @@
 
 <!DOCTYPE html>
-    <html lang="en">
-
-    
-<!-- Mirrored from shreethemes.in/doctris/layouts/landing/patient-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Aug 2021 06:50:43 GMT -->
+    <html lang="en">   
+<!-- Mirrored from shreethemes.in/doctris/layouts/landing/index-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Aug 2021 06:48:15 GMT -->
 <head>
         <meta charset="utf-8" />
         <title>Doctris - Doctor Appointment Booking System</title>
@@ -15,44 +13,30 @@
         <meta name="website" content="https://shreethemes.in/" />
         <meta name="Version" content="v1.2.0" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="https://shreethemes.in/doctris/layouts/assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{{asset('assets/https://shreethemes.in/doctris/layouts/assets/images/favicon.ico')}}">
         <!-- Bootstrap -->
         <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
-        <!-- Date picker -->
-        <link rel="stylesheet" href="{{asset('assets/css/flatpickr.min.css')}}">
-        <!-- simplebar -->
-        <link href="{{asset('assets/css/simplebar.css')}}" rel="stylesheet" type="text/css" />
         <!-- Icons -->
         <link href="{{asset('assets/css/materialdesignicons.min.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{asset('assets/css/remixicon.css" rel="stylesheet')}}" type="text/css" />
-        <link href="unicons.iconscout.com/release/v3.0.6/css/line.css"  rel="stylesheet">
+        <link href="{{asset('assets/css/remixicon.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('assets/v3.0.6/css/line.css')}}"  rel="stylesheet">
         <!-- Css -->
         <link href="{{asset('assets/css/style.min.css')}}" rel="stylesheet" type="text/css" id="theme-opt" />
 
-    </head>
 
+       
+    </head>
     <body>
-        <!-- Loader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div>
-        <!-- Loader -->
-        
         <!-- Navbar STart -->
         <header id="topnav" class="defaultscroll sticky">
-            <div class="container-fluid">
+            <div class="container">
                 <!-- Logo container-->
                 <a class="logo" href="index.html">
-                    <img src="../assets/images/logo-dark.png')}}" height="24" class="logo-light-mode" alt="">
-                    <img src="../assets/images/logo-light.png')}}" height="24" class="logo-dark-mode" alt="">
+                    <img src="{{asset('assets/images/logo-dark.png')}}" height="24" class="logo-light-mode" alt="">
+                    <img src="{{asset('assets/images/logo-light.png')}}" height="24" class="logo-dark-mode" alt="">
                 </a>                
                 <!-- Logo End -->
-
+                
                 <!-- Start Mobile Toggle -->
                 <div class="menu-extras">
                     <div class="menu-item">
@@ -85,19 +69,50 @@
 
                     <li class="list-inline-item mb-0 ms-1">
                         <div class="dropdown dropdown-primary">
-                            <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/client/09.jpg" class="avatar avatar-ex-small rounded-circle" alt=""></button>
+                            <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('assets/images/doctors/01.jpg')}}" class="avatar avatar-ex-small rounded-circle" alt=""></button>
                             <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3" style="min-width: 200px;">
-                                <a class="dropdown-item d-flex align-items-center text-dark" href="doctor-profile.html">
-                                    <img src="../assets/images/client/09.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                            <!--    <a class="dropdown-item d-flex align-items-center text-dark" href="doctor-profile.html">
+                                    <img src="../assets/images/doctors/01.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                     <div class="flex-1 ms-2">
-                                        <span class="d-block mb-1">Mrs. Christopher</span>
-                                        <small class="text-muted">25 Year old</small>
+                                        <span class="d-block mb-1">Calvin Carlo</span>
+                                        <small class="text-muted">Orthopedic</small>
+                                    </div>
+                                </a> -->
+                                <a class="dropdown-item text-dark" href="doctor-dashboard.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-dashboard align-middle h6"></i></span> Dashboard</a>
+                                <a class="dropdown-item text-dark" href="doctor-profile-setting.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-setting align-middle h6"></i></span> Profile Settings</a>
+                                <div class="dropdown-divider border-top"></div>
+
+                                @guest 
+
+                                <a class="dropdown-item text-dark" href="{{ route('login') }}"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Login</a>
+
+
+                                @if (Route::has('register'))
+                                <a class="dropdown-item text-dark" href="{{ route('register') }}"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Signup</a>
+
+                                @endif
+                               
+                                 @else
+
+                                 <a class="dropdown-item d-flex align-items-center text-dark" href="doctor-profile.html">
+                                    <img src="../assets/images/doctors/01.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                    <div class="flex-1 ms-2">
+                                        <span class="d-block mb-1"> {{ Auth::user()->name }} </span>
+                                        <small class="text-muted">Orthopedic</small>
                                     </div>
                                 </a>
-                                <a class="dropdown-item text-dark" href="patient-dashboard.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-dashboard align-middle h6"></i></span> Dashboard</a>
-                                <a class="dropdown-item text-dark" href="patient-profile.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-user align-middle h6"></i></span> Profile</a>
-                                <div class="dropdown-divider border-top"></div>
-                                <a class="dropdown-item text-dark" href="javascript:void(0)"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Logout</a>
+
+                                <a class="dropdown-item text-dark" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" class="theme-btn theme-btn-small" ><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Log-out
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                </form> 
+                            
+                            </a>
+
+                                @endguest
+
+
                             </div>
                         </div>
                     </li>
@@ -108,12 +123,12 @@
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu nav-left">
                         <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
+                            <a href="javascript:void(0)">Home</a><span class=""></span>
+                           <!-- <ul class="submenu">
                                 <li><a href="index.html" class="sub-menu-item">Index One</a></li>
                                 <li><a href="index-two.html" class="sub-menu-item">Index Two</a></li>
                                 <li><a href="index-three.html" class="sub-menu-item">Index Three</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
 
                         <li class="has-submenu parent-parent-menu-item">
@@ -188,7 +203,7 @@
                 </div><!--end navigation-->
             </div><!--end container-->
         </header><!--end header-->
-        <!-- Navbar End -->
+
 
         @yield('content')
 
