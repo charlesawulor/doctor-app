@@ -134,7 +134,34 @@
                             </ul> -->
                         </li>
 
-                        <li class="has-submenu parent-parent-menu-item">
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">About Us</a><span class=""></span>
+                           <!-- <ul class="submenu">
+                                <li><a href="index.html" class="sub-menu-item">Index One</a></li>
+                                <li><a href="index-two.html" class="sub-menu-item">Index Two</a></li>
+                                <li><a href="index-three.html" class="sub-menu-item">Index Three</a></li>
+                            </ul> -->
+                        </li>
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Doctors</a><span class=""></span>
+                           <!-- <ul class="submenu">
+                                <li><a href="index.html" class="sub-menu-item">Index One</a></li>
+                                <li><a href="index-two.html" class="sub-menu-item">Index Two</a></li>
+                                <li><a href="index-three.html" class="sub-menu-item">Index Three</a></li>
+                            </ul> -->
+                        </li>
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Specialties</a><span class=""></span>
+                           <!-- <ul class="submenu">
+                                <li><a href="index.html" class="sub-menu-item">Index One</a></li>
+                                <li><a href="index-two.html" class="sub-menu-item">Index Two</a></li>
+                                <li><a href="index-three.html" class="sub-menu-item">Index Three</a></li>
+                            </ul> -->
+                        </li>
+
+                    <!--    <li class="has-submenu parent-parent-menu-item">
                             <a href="javascript:void(0)">Doctors</a><span class="menu-arrow"></span>
                             <ul class="submenu">
                                 <li class="has-submenu parent-menu-item">
@@ -201,7 +228,10 @@
                                 <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
                             </ul>
                         </li>
-                        <li><a href="https://shreethemes.in/doctris/layouts/admin/index.html" class="sub-menu-item" target="_blank">Admin</a></li>
+                        <li><a href="https://shreethemes.in/doctris/layouts/admin/index.html" class="sub-menu-item" target="_blank">Admin</a></li>  -->
+
+
+
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
             </div><!--end container-->
