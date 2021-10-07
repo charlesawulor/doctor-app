@@ -161,6 +161,16 @@
                             </ul> -->
                         </li>
 
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Services</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                            <li><a href="doctor-appointment.html" class="sub-menu-item">Walk-in Consultation</a></li>
+                                        <li><a href="doctor-appointment.html" class="sub-menu-item">Online Prescription</a></li>
+                               
+                            </ul>
+                        </li>
+
+
                     <!--    <li class="has-submenu parent-parent-menu-item">
                             <a href="javascript:void(0)">Doctors</a><span class="menu-arrow"></span>
                             <ul class="submenu">
