@@ -100,7 +100,7 @@
                             </div>
                             <div class="card-body p-0 mt-3">
                                 <a href="departments.html" class="title text-dark h5">Doctors</a>
-                                <p class="text-muted mt-3">Due to its wide spread use as filler text</p>
+                                <p class="text-muted mt-3">Browse through the doctors on our platform</p>
                                 <a href="departments.html" class="link">Find here <i class="ri-arrow-right-line align-middle"></i></a>
                             </div>
                         </div>
@@ -113,13 +113,13 @@
                             </div>
                             <div class="card-body p-0 mt-3">
                                 <a href="departments.html" class="title text-dark h5">Clinics</a>
-                                <p class="text-muted mt-3">Due to its wide spread use as filler text</p>
+                                <p class="text-muted mt-3">Browser by hospitals</p>
                                 <a href="departments.html" class="link">Find here <i class="ri-arrow-right-line align-middle"></i></a>
                             </div>
                         </div>
                     </div><!--end col-->
 
-                    <div class="col-xl col-md-4 col-12 mt-4 pt-2">
+                <!--    <div class="col-xl col-md-4 col-12 mt-4 pt-2">
                         <div class="card features feature-primary border-0 p-4 rounded-md shadow">
                             <div class="icon text-center rounded-lg">
                                 <i class="uil uil-microscope h3 mb-0"></i>
@@ -130,7 +130,7 @@
                                 <a href="departments.html" class="link">Find here <i class="ri-arrow-right-line align-middle"></i></a>
                             </div>
                         </div>
-                    </div><!--end col-->
+                    </div>
 
                     <div class="col-xl col-md-4 col-12 mt-4 pt-2">
                         <div class="card features feature-primary border-0 p-4 rounded-md shadow">
@@ -143,7 +143,7 @@
                                 <a href="departments.html" class="link">Find here <i class="ri-arrow-right-line align-middle"></i></a>
                             </div>
                         </div>
-                    </div><!--end col-->
+                    </div>-->
 
                     <div class="col-xl col-md-4 col-12 mt-4 pt-2">
                         <div class="card features feature-primary border-0 p-4 rounded-md shadow">
