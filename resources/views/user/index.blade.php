@@ -47,9 +47,10 @@
                                 </div><!--end col-->
                             </div><!--end row-->
 
-                            <span class="bg-soft-success p-2 rounded-pill text-center h6 mb-0 mt-4">
-                                Complete Profile
-                            </span>
+                           <span class="bg-soft-success p-2 rounded-pill text-center h6 mb-0 mt-4">
+                               <a href="{{route('complete-profile')}}"> Complete Profile </a>
+                                </span>
+
                             <span class="bg-soft-success p-2 rounded-pill text-center h6 mb-0 mt-4">
                                 Update Profile 
                             </span>

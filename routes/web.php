@@ -17,7 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-//Route::get('/user', 'RegisterController@create')->name('user');
+Route::get('/user/complete-profile', 'DoctorController@index')->name('complete-profile');
+
+//Route::resource('complete-profile','DoctorController')->name('complete-profile');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
