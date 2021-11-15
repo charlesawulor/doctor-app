@@ -47,8 +47,13 @@
                                 </div><!--end col-->
                             </div><!--end row-->
 
-                            
-                        
+                            <span class="bg-soft-success p-2 rounded-pill text-center h6 mb-0 mt-4">
+                                Complete Profile
+                            </span>
+                            <span class="bg-soft-success p-2 rounded-pill text-center h6 mb-0 mt-4">
+                                Update Profile 
+                            </span>
+                           
 
                             <h6 class="mt-4 mb-0">Payments:</h6>
                             <ul class="list-unstyled mb-0 mt-4">
