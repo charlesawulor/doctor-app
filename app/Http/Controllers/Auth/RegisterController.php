@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/user';
 
     /**
      * Create a new controller instance.
@@ -70,5 +70,6 @@ class RegisterController extends Controller
         ]);
         $user->attachRole('user');
         return $user;
+
     }
 }
