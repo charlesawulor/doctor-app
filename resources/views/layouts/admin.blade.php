@@ -6,7 +6,7 @@
 <!-- Mirrored from shreethemes.in/doctris/layouts/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Oct 2021 15:20:26 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Doctris - Doctor Appointment Booking System</title>
+        <title>Tele-Health - Doctor Appointment Booking System</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
         <meta name="keywords" content="Appointment, Booking, System, Dashboard, Health" />
