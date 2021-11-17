@@ -14,6 +14,7 @@ class DoctorController extends Controller
      */
     public function index()
     {
+     
         return view('user/complete-profile');
     }
 

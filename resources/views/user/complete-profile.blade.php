@@ -60,7 +60,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="textarea" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required >
+                                <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required >
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -75,7 +75,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Contact Email') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="textarea" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required >
+                            <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{{Auth::user()->email }}}" readonly >
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -89,7 +89,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('About You') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="textarea" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required >
+                                <textarea id="email" type="textarea" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required > </textarea>
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -97,6 +97,7 @@
                                     </span>
                                 @enderror
                             </div>
+
                         </div> <br>
 
                         <div class="form-group row mb-0">
