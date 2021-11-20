@@ -126,7 +126,7 @@
                                 </div><!--end row-->
                             </div><!--end col-->
 
-                            <div class="col-xl-3 col-lg-6 col-12">
+                            <div class="col-xl-5 col-lg-6 col-12">
                                 <div class="row">
                                     <div class="col-12 mt-4 pt-2">
                                         <div class="card border-0 rounded shadow p-4">
@@ -150,7 +150,7 @@
                                 </div><!--end row-->
                             </div><!--end col-->
 
-                            <div class="col-xl-3 col-lg-6 col-12 mt-4 pt-2">
+                            <div class="col-xl-4 col-lg-6 col-12 mt-4 pt-2">
                                 <div class="card border-0 rounded shadow">
                                     <div class="d-flex justify-content-between align-items-center px-4 pt-4">
                                         <h6 class="mb-0">Doctor's Appointment</h6>
@@ -173,23 +173,7 @@
                                     </div>
                                     
                                     <div class="p-4" data-simplebar style="max-height: 355px;">
-                                        <div class="d-flex justify-content-between align-items-center rounded py-1 px-3 shadow">
-                                            <i class="ri-heart-pulse-line h3 fw-normal text-primary mb-0"></i>
-                                            <div class="flex-1 overflow-hidden ms-2">
-                                                <h6 class="mb-0">Cardiogram</h6>
-                                                <p class="text-muted mb-0 text-truncate small">Dr. Calvin Carlo</p>
-                                            </div>
-                                            <span class="mb-0">10 Dec</span>
-                                        </div>
-
-                                        <div class="d-flex justify-content-between align-items-center rounded py-1 px-3 shadow mt-3">
-                                            <i class="ri-stethoscope-line h3 fw-normal text-success mb-0"></i>
-                                            <div class="flex-1 overflow-hidden ms-2">
-                                                <h6 class="mb-0">Checkup</h6>
-                                                <p class="text-muted mb-0 text-truncate small">Dr. Cristino Murphy</p>
-                                            </div>
-                                            <span class="mb-0">12 Dec</span>
-                                        </div>
+                                      
 
                                         <div class="d-flex justify-content-between align-items-center rounded py-1 px-3 shadow mt-3">
                                             <i class="ri-virus-line h3 fw-normal text-warning mb-0"></i>
@@ -230,71 +214,7 @@
                                 </div>
                             </div><!--end col-->
 
-                            <div class="col-xl-3 col-lg-6 col-12 mt-4 pt-2">
-                                <div class="card border-0 rounded shadow">
-                                    <div class="d-flex justify-content-between align-items-center px-4 pt-4">
-                                        <h6 class="mb-0">Payments</h6>
-                                        
-                                        <div class="dropdown dropdown-primary">
-                                            <button type="button" class="btn btn-icon btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="uil uil-ellipsis-h icons"></i></button>
-                                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3">
-                                                <a class="dropdown-item text-dark" href="#"><span class="mb-0 d-inline-block me-1"><i class="uil uil-book-medical align-middle h6"></i></span> Add New</a>
-                                                <a class="dropdown-item text-dark" href="#"><span class="mb-0 d-inline-block me-1"><i class="uil uil-trash align-middle h6"></i></span> Delete</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="p-4" data-simplebar style="max-height: 420px;">
-                                        <div class="d-flex justify-content-between align-items-center rounded py-2 px-3 shadow">
-                                            <div class="flex-1 overflow-hidden">
-                                                <h6 class="mb-0">Cardiogram</h6>
-                                                <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                            </div>
-                                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                        </div>
-
-                                        <div class="d-flex justify-content-between align-items-center rounded py-2 px-3 shadow mt-3">
-                                            <div class="flex-1 overflow-hidden">
-                                                <h6 class="mb-0">Checkup</h6>
-                                                <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                            </div>
-                                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                        </div>
-
-                                        <div class="d-flex justify-content-between align-items-center rounded py-2 px-3 shadow mt-3">
-                                            <div class="flex-1 overflow-hidden">
-                                                <h6 class="mb-0">Covid Test</h6>
-                                                <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                            </div>
-                                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                        </div>
-
-                                        <div class="d-flex justify-content-between align-items-center rounded py-2 px-3 shadow mt-3">
-                                            <div class="flex-1 overflow-hidden">
-                                                <h6 class="mb-0">Dentist</h6>
-                                                <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                            </div>
-                                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                        </div>
-
-                                        <div class="d-flex justify-content-between align-items-center rounded py-2 px-3 shadow mt-3">
-                                            <div class="flex-1 overflow-hidden">
-                                                <h6 class="mb-0">Eye Test</h6>
-                                                <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                            </div>
-                                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                        </div>
-
-                                        <div class="d-flex justify-content-between align-items-center rounded py-2 px-3 shadow mt-3">
-                                            <div class="flex-1 overflow-hidden">
-                                                <h6 class="mb-0">Orthopedic</h6>
-                                                <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                            </div>
-                                            <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
+                    
 
                             <div class="col-xl-4 col-lg-6 mt-4 pt-2">
                                 <div class="card chat chat-person border-0 shadow rounded">
@@ -592,4 +512,6 @@
             </div><!--end container-->
         </section><!--end section-->
         <!-- End Hero -->
+
+
         @endsection
