@@ -59,7 +59,16 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Specialization') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <select id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                @if(count($specializations) > 0)	
+	                                @foreach($specializations as $specialization)  
+                                  <option value="{{$specialization->title}}" >{{$specialization->title}}</option>
+
+                                                            @endforeach
+                                                            @endif
+
+
+                                </select>
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">

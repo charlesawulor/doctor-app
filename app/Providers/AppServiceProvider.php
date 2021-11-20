@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Specialization;
 
 
 use Illuminate\Support\ServiceProvider;
@@ -30,6 +31,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-
+        View::share('specializations', Specialization::orderBy('id','asc')->get());
     }
 }

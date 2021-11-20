@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Profile;
 
+
 class DoctorController extends Controller
 {
     /**
@@ -50,6 +51,8 @@ class DoctorController extends Controller
     {
         //
     }
+
+   
 
     /**
      * Show the form for editing the specified resource.
