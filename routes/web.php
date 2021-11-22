@@ -26,3 +26,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user', 'UserController@index')->name('user');
 
 Route::get('/admin', 'AdminController@index')->name('admin');
+
+Route::post('/user/complete-profile', 'DoctorController@store')->name('profile'); 
+Route::get('/user/payment', 'DoctorController@payment')->name('payment');

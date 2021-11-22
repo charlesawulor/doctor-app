@@ -38,7 +38,25 @@ class DoctorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       
+      
+             $profile = new Profile;
+             $profile->years_exp = $request->input('years_exp');
+             $profile->highest_qualification = $request->input('highest_qualification ');
+             $profile->registration_liecense = $request->input('registration_liecense ');
+             $profile->hospital = $request->input('hospital');
+             $profile->city = $request->input('city');
+             $profile->country = $request->input('country');
+             $profile->name = $request->input('name');
+             $profile->email = $request->input('email');
+             $profile->phone = $request->input('phone');
+             $profile->specialization = $request->input('specialization');
+             $profile->fee = $request->input('fee');
+           //  $profiles->about = $request->input('about');
+             $profile->status = $request->input('status');           
+             $profile->save();
+      
+             return redirect('user/complete-profile')->with('success', 'Post submitted');
     }
 
     /**
@@ -52,8 +70,10 @@ class DoctorController extends Controller
         //
     }
 
-   
-
+    public function payment()
+    {      
+    return view('user/payment');
+    }
     /**
      * Show the form for editing the specified resource.
      *
