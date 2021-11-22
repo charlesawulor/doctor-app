@@ -39,8 +39,25 @@ class DoctorController extends Controller
     public function store(Request $request)
     {
        
+
+        if($request->hasFile('cover_image')){
+            //get file name with extensions
+            $filenameWithExt = $request->file('cover_image')->getClientOriginalName();
+            //get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //GET THE EXTENSION
+            $extension = $request->file('cover_image')->getClientOriginalExtension();
+            //filename to store
+            $fileNameToStore = $filename .'_'.time().'.'.$extension;
+            //upload image
+            $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+        }else{
+            $fileNameToStore = 'noimage.jpg';
+        }
       
+
              $profile = new Profile;
+             $profile->cover_image = $fileNameToStore;
              $profile->years_exp = $request->input('years_exp');
              $profile->qualification = $request->input('qualification');
              $profile->license = $request->input('license');

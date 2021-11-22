@@ -10,10 +10,10 @@
 
                 
                 <div class="card-body">
-                    <form method="POST" action="{{route('profile')}}">
+                    <form method="POST" action="{{route('profile')}}"  enctype="multipart/form-data">
                       
 
-                <!--        <div class="form-group row">
+                  <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Profile Picture') }}</label>
 
                             <div class="col-md-6">
@@ -25,7 +25,7 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div> <br>  -->
+                        </div> <br>  
 
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Years Of Experience') }}</label>
