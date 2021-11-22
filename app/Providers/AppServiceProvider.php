@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Specialization;
+use App\Profile;
 
 
 use Illuminate\Support\ServiceProvider;
@@ -32,5 +33,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
         View::share('specializations', Specialization::orderBy('id','asc')->get());
+        View::share('profile', Profile::orderBy('id','desc')->get());
     }
 }

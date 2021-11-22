@@ -16,7 +16,8 @@ class DoctorController extends Controller
      */
     public function index()
     {
-     
+        //View::share('profile', Profile::orderBy('id','desc')->get());
+  
         return view('user/complete-profile');
     }
 
@@ -69,11 +70,12 @@ class DoctorController extends Controller
              $profile->phone = $request->input('phone');
              $profile->specialization = $request->input('specialization');
              $profile->fee = $request->input('fee');
-           //  $profiles->about = $request->input('about');
+             $profile->about = $request->input('about');
              $profile->status = $request->input('status');           
              $profile->save();
       
-             return redirect('user/complete-profile')->with('success', 'Post submitted');
+            // return redirect('user/payment')->with('success', 'Post submitted');
+             return redirect()->route('payment')->with('success', 'Payment successful');
     }
 
     /**
@@ -88,7 +90,9 @@ class DoctorController extends Controller
     }
 
     public function payment()
-    {      
+    {  
+
+    $profile = Profile::orderBy('id','asc')->get();    
     return view('user/payment');
     }
     /**
