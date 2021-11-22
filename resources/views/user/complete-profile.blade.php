@@ -45,7 +45,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Highest Educational Qualification') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="highest_qualification"  autofocus>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="qualification"  autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -60,7 +60,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Registration And Liecense') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="registration_liecense"  autofocus>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="license"  autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">

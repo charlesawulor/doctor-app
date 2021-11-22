@@ -42,8 +42,8 @@ class DoctorController extends Controller
       
              $profile = new Profile;
              $profile->years_exp = $request->input('years_exp');
-             $profile->highest_qualification = $request->input('highest_qualification ');
-             $profile->registration_liecense = $request->input('registration_liecense ');
+             $profile->qualification = $request->input('qualification');
+             $profile->license = $request->input('license');
              $profile->hospital = $request->input('hospital');
              $profile->city = $request->input('city');
              $profile->country = $request->input('country');
