@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\Profile;
+use App\Charge;
 
 
 class DoctorController extends Controller
@@ -19,6 +20,13 @@ class DoctorController extends Controller
         //View::share('profile', Profile::orderBy('id','desc')->get());
   
         return view('user/complete-profile');
+    }
+
+
+    public function charge()
+    {
+        $charge = Charge::orderBy('id','asc')->get();    
+        return view('user/payment');
     }
 
     /**
@@ -95,6 +103,8 @@ class DoctorController extends Controller
     $profile = Profile::orderBy('id','asc')->get();    
     return view('user/payment');
     }
+
+
     /**
      * Show the form for editing the specified resource.
      *
