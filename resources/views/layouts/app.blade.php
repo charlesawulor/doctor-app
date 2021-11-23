@@ -70,8 +70,13 @@
                     <li class="list-inline-item mb-0 ms-1">
                         <div class="dropdown dropdown-primary">
                             <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @if(count($profile) > 0)
+                                @foreach($profile as $profile)
+                            <img src="/doctor-app/storage/app/public/cover_images/{{$profile->cover_image}}" class="avatar avatar-ex-small rounded-circle" alt="">
+                            @endforeach
+                                @endif
 
-                            <img src="{{asset('assets/images/doctors/01.jpg')}}" class="avatar avatar-ex-small rounded-circle" alt="">
+
                             </button>
                             <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3" style="min-width: 200px;">
                             <!--    <a class="dropdown-item d-flex align-items-center text-dark" href="doctor-profile.html">
@@ -100,19 +105,13 @@
                                
 
 
-                                @if(count($profile) > 0)
-                                @foreach($profile as $profile)
-                                <img src="/doctor-app/storage/app/public/cover_images/{{$profile->cover_image}}" class="avatar avatar-md-sm rounded-circle border shadow" alt=""> 
-                                 @endforeach
-                                @endif
-
                                 <a class="dropdown-item d-flex align-items-center text-dark" href="doctor-profile.html">
                               
                               <div class="flex-1 ms-2">
                                   <span class="d-block mb-1"> {{ Auth::user()->name }} </span>
                                   <small class="text-muted">Orthopedic</small>
                               </div>
-                          </a>
+                               </a>
 
                                 <a class="dropdown-item text-dark" href="doctor-dashboard.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-dashboard align-middle h6"></i></span> Dashboard</a>
                                 <a class="dropdown-item text-dark" href="doctor-profile-setting.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-setting align-middle h6"></i></span> Profile Settings</a>
