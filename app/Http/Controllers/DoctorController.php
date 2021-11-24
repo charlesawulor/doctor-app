@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Profile;
 use App\Charge;
+use App\User;
 
 
 class DoctorController extends Controller
@@ -18,7 +19,7 @@ class DoctorController extends Controller
     public function index()
     {
         //View::share('profile', Profile::orderBy('id','desc')->get());
-  
+        
         return view('user/complete-profile');
     }
 
@@ -99,8 +100,7 @@ class DoctorController extends Controller
 
     public function payment()
     {  
-
-    $profile = Profile::orderBy('id','asc')->get();    
+    $profile = Profile::orderBy('id','asc')->get();   
     return view('user/payment');
     }
 
@@ -113,7 +113,7 @@ class DoctorController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -125,7 +125,43 @@ class DoctorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        if($request->hasFile('cover_image')){
+            //get file name with extensions
+            $filenameWithExt = $request->file('cover_image')->getClientOriginalName();
+            //get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //GET THE EXTENSION
+            $extension = $request->file('cover_image')->getClientOriginalExtension();
+            //filename to store
+            $fileNameToStore = $filename .'_'.time().'.'.$extension;
+            //upload image
+            $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+        }else{
+            $fileNameToStore = 'noimage.jpg';
+        }
+      
+
+          //   $profile = new Profile;
+             $user = Auth::user($id);
+             $user->cover_image = $fileNameToStore;
+             $user->years_exp = $request->input('years_exp');
+             $user->qualification = $request->input('qualification');
+             $user->license = $request->input('license');
+             $user->hospital = $request->input('hospital');
+             $user->city = $request->input('city');
+             $user->country = $request->input('country');
+             $user->name = $request->input('name');
+             $user->email = $request->input('email');
+             $user->phone = $request->input('phone');
+             $user->specialization = $request->input('specialization');
+             $user->fee = $request->input('fee');
+             $user->about = $request->input('about');
+             $user->status = $request->input('status');           
+             $user->save();
+      
+            // return redirect('user/payment')->with('success', 'Post submitted');
+             return redirect()->route('payment')->with('success', 'Payment successful');
+      
     }
 
     /**

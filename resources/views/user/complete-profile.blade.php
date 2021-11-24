@@ -9,8 +9,8 @@
                 <div class="card-header">{{ __('Complete Profile') }}</div>
 
                 
-                <div class="card-body">
-                    <form method="POST" action="{{route('profile')}}"  enctype="multipart/form-data">
+              <div class="card-body">
+                    <form method="POST" action="{{route('profileupdate',Auth::user()->id)}}"  enctype="multipart/form-data">
                       
 
                   <div class="form-group row">
@@ -230,7 +230,21 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

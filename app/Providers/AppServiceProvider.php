@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Providers;
-
+use Auth;
 use App\Specialization;
 use App\Profile;
 use App\Charge;
+
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
@@ -35,5 +36,14 @@ class AppServiceProvider extends ServiceProvider
         View::share('specializations', Specialization::orderBy('id','asc')->get());
         View::share('profile', Profile::orderBy('id','desc')->get());
         View::share('charge', Charge::orderBy('id','desc')->get());
+
+
+       
+
+     
+
+      
+        
+       
     }
 }

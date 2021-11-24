@@ -70,11 +70,9 @@
                     <li class="list-inline-item mb-0 ms-1">
                         <div class="dropdown dropdown-primary">
                             <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            @if(count($profile) > 0)
-                                @foreach($profile as $profile)
-                            <img src="/doctor-app/storage/app/public/cover_images/{{$profile->cover_image}}" class="avatar avatar-ex-small rounded-circle" alt="">
-                            @endforeach
-                                @endif
+                           
+                            <img src="/doctor-app/storage/app/public/{{Auth::user()->cover_image}}" class="avatar avatar-ex-small rounded-circle" alt="">
+                            
 
 
                             </button>
