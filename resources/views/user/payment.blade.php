@@ -8,6 +8,10 @@
             <div class="card">
                 <div class="card-header">{{ __('Pay registration fee to complete registration') }}</div>
 
+               
+                
+              
+
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                        

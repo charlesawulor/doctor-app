@@ -71,7 +71,7 @@
                         <div class="dropdown dropdown-primary">
                             <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            
-                            <img src="/doctor-app/storage/app/public/{{Auth::user()->cover_image}}" class="avatar avatar-ex-small rounded-circle" alt="">
+                            <img src="/doctor-app/storage/app/public/cover_images/{{Auth::user()->cover_image}}" class="avatar avatar-ex-small rounded-circle" alt="">
                             
 
 
