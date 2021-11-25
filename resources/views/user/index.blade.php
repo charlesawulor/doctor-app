@@ -11,11 +11,11 @@
                         <div class="card border-0 p-4 rounded shadow overflow-hidden sticky-bar">
                             <div class="d-md-flex text-center text-md-start align-items-center">
                               
-                            <img src="{{asset('assets/images/client/09.jpg')}}" class="avatar avatar-md-md rounded-circle border shadow" alt="">
+                            <img src="/doctor-app/storage/app/public/cover_images/{{Auth::user()->cover_image}}" class="avatar avatar-md-md rounded-circle border shadow" alt="">
 
 
                                 <div class="ms-md-3 mt-3 mt-sm-0">
-                                    <h5 class="d-block mb-1 mb-sm-0">Christopher Burrell</h5>
+                                    <h5 class="d-block mb-1 mb-sm-0">{{Auth::user()->name}}</h5>
                                     <small class="text-muted">25 Years old</small>
                                 </div>
                             </div>
@@ -277,6 +277,9 @@
                                     </div>
                                 </div>
                             </div><!--end col-->
+
+
+                           
 
                      
 
