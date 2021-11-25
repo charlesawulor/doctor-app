@@ -440,9 +440,7 @@
                             </div>
                         </div>
 
-                        <!-- <div class="text-end mt-4 pt-2">
-                            <a href="javascript:window.print()" class="btn btn-soft-primary d-print-none"><i class="uil uil-print"></i> Print</a>
-                        </div> -->
+                
                     </div>
                 </div>
             </div>
@@ -465,19 +463,4 @@
         <!-- Main Js -->
         <script src="{{asset('assets/js/app.js')}}"></script>
     </body>
-
-
-<!-- Mirrored from shreethemes.in/doctris/layouts/landing/patient-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Aug 2021 06:50:45 GMT -->
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
