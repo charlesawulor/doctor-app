@@ -13,17 +13,16 @@
               
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                       
+                    
+                @if(count($charge) > 0)
+                                @foreach($charge as $payment)
 
-                    @if(count($charge) > 0)
-                                @foreach($charge as $charge)
+                   
                      <p>   Registration fee :  
-                         <span class="font-size-13">${{$charge->registration_fee}}</span>  
+                         <span class="font-size-13">${{$payment->registration_fee}}</span>  
                         </p>
 
-                        @endforeach
-                    @endif
+                
 
 
                         <br>
@@ -31,13 +30,17 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
+
+                       <a href="singlepage/{{$payment->id}}"> 
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Proceed') }}
                                 </button>
+                         </a>
 
                             </div>
                         </div>
-                    </form>
+                        @endforeach
+                    @endif
                 </div>
             </div>
         </div>

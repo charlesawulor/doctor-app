@@ -34,5 +34,5 @@ Route::get('/user/payment', 'DoctorController@charge')->name('payment');
 
 Route::post('/user/complete-profile/{id}', 'DoctorController@update')->name('profileupdate'); 
 
-
+Route::resource('/user/singlepage','DoctorController');
 

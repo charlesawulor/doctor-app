@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Session;
 use Auth;
 use App\Profile;
 use App\Charge;
 use App\User;
+
+//use Stripe\Stripe;
 
 
 class DoctorController extends Controller
@@ -18,9 +21,11 @@ class DoctorController extends Controller
      */
     public function index()
     {
-        //View::share('profile', Profile::orderBy('id','desc')->get());
+
         
         return view('user/complete-profile');
+
+      
     }
 
 
@@ -95,7 +100,8 @@ class DoctorController extends Controller
      */
     public function show($id)
     {
-        //
+        $charges = Charge::orderBy('id','asc')->get();
+        return view('user/singlepage',compact ('charges'));
     }
 
     public function payment()
@@ -164,6 +170,27 @@ class DoctorController extends Controller
       
     }
 
+
+
+
+
+    public function getAddToCart(Request $request, $id) {
+        $charge = Charge::find($id);
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->add($charge, $charge->id);   
+        $request->session()->put('cart',$cart);
+       // return back(); 
+       return redirect()->route('booking-cart');        
+    }
+
+    public function singlepage()
+    {
+    
+    }
+
+
+
     /**
      * Remove the specified resource from storage.
      *
@@ -174,4 +201,9 @@ class DoctorController extends Controller
     {
         //
     }
+
+
+
+
+
 }

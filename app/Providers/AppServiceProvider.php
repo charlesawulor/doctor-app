@@ -36,6 +36,7 @@ class AppServiceProvider extends ServiceProvider
         View::share('specializations', Specialization::orderBy('id','asc')->get());
         View::share('profile', Profile::orderBy('id','desc')->get());
         View::share('charge', Charge::orderBy('id','desc')->get());
+        //View::share('charges', Charge::orderBy('id','desc')->get());
 
 
        
