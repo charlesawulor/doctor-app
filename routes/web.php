@@ -36,3 +36,10 @@ Route::post('/user/complete-profile/{id}', 'DoctorController@update')->name('pro
 
 Route::resource('/user/singlepage','DoctorController');
 
+Route::get('/booking-cart', 'DoctorController@getCart')->name('booking-cart'); 
+
+Route::get('/add-to-cart/{id}',[
+    'uses' => 'DoctorController@getAddToCart',
+    'as' => 'singlepage.addToCart'  
+    ]);
+

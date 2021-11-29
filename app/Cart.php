@@ -34,6 +34,7 @@ class Cart extends Model
     $this->items[$id] = $storedItem;
     $this->totalQty++;
     $this->totalPrice += $item->registration_fee;
+    
 
 
  }

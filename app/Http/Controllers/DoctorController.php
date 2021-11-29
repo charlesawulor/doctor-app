@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Cart;
 use Illuminate\Http\Request;
 use Session;
 use Auth;
@@ -183,6 +183,18 @@ class DoctorController extends Controller
        // return back(); 
        return redirect()->route('booking-cart');        
     }
+
+
+    
+    public function getCart(){
+        if (!Session::has('cart')){
+             return view('user/booking-cart');
+        }
+        $oldCart = Session::get('cart');
+        $cart = new Cart($oldCart);
+        return view('user/booking-cart', ['charges' => $cart->items, 'totalPrice' => $cart->totalPrice]);
+      }
+
 
     public function singlepage()
     {
