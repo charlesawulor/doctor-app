@@ -102,7 +102,6 @@ class DoctorController extends Controller
     {
         $charges = Charge::find($id);
        return view('user/singlepage')->with('charges',$charges);
-       // return view('user/singlepage',compact ('charges'));
     }
 
     public function payment()
