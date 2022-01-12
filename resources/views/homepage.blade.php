@@ -165,7 +165,7 @@
                     <div class="col-lg-7 col-md-6">
                         <div class="section-title me-lg-5">
                             <span class="badge badge-pill badge-soft-primary">About Doctris</span>
-                            <h4 class="title mt-3 mb-4">Good Services And Better <br> Health By Our Specialists</h4>
+                            <h4 class="title mt-3 mb-4">Good Services And Better <br> Health By Our Certified And Trusted Specialists</h4>
                             <p class="para-desc text-muted">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
                             <p class="para-desc text-muted">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.</p>
                             <div class="mt-4">
