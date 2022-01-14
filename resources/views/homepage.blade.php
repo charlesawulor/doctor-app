@@ -167,7 +167,7 @@
                             <span class="badge badge-pill badge-soft-primary">About Doctris</span>
                             <h4 class="title mt-3 mb-4">Good Services And Better <br> Health By Our Certified And Trusted Specialists</h4>
                             <p class="para-desc text-muted">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
-                            <p class="para-desc text-muted">The most well-known telemedicine platform</p>
+                            <p class="para-desc text-muted">The most well-known telemedicine platform. Signup for free.</p>
                             <div class="mt-4">
                                 <a href="aboutus.html" class="btn btn-soft-primary">Read More</a>
                             </div>
